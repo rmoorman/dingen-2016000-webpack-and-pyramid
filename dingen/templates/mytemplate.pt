@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}" xmlns:tal="http://xml.zope.org/namespaces/tal">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="pyramid">
+    <title>Hello world</title>
+
+    <link tal:condition="not request.registry.settings.get('dingen.dev')" href="${request.static_url('dingen:static/main.css')}" rel="stylesheet">
+  </head>
+
+  <body>
+    <script tal:condition="request.registry.settings.get('dingen.dev')" src="${request.static_url('dingen:static/main.js')}"></script>
+
+    <script tal:condition="not request.registry.settings.get('dingen.dev')" src="${request.static_url('dingen:static/manifest.js')}"></script>
+    <script tal:condition="not request.registry.settings.get('dingen.dev')" src="${request.static_url('dingen:static/vendor.js')}"></script>
+    <script tal:condition="not request.registry.settings.get('dingen.dev')" src="${request.static_url('dingen:static/main.js')}"></script>
+  </body>
+</html>

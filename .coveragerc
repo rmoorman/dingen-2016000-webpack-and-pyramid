@@ -1,0 +1,3 @@
+[run]
+source = hollow_fox
+omit = hollow_fox/test*

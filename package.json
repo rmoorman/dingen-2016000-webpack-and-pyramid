@@ -1,0 +1,43 @@
+{
+  "name": "dingen",
+  "version": "1.0.0",
+  "scripts": {
+    "own-dev-server-with-middlewares": "node webpack.dev-server.js",
+    "webpack-dev-server": "webpack-dev-server --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "license": "proprietary",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-react-display-name": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "clean-webpack-plugin": "^0.1.9",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "postcss-loader": "^0.10.1",
+    "react-transform-catch-errors": "^1.0.2",
+    "react-transform-hmr": "^1.0.4",
+    "redbox-react": "^1.2.10",
+    "stats-webpack-plugin": "^0.4.2",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.12.1",
+    "webpack-manifest-plugin": "^1.0.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  }
+}
